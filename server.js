@@ -5,11 +5,12 @@ const PORT = process.env.PORT || 3002;
 const app = express();
 const apiRoutes = require('./routes/apiRoutes');
 const inputCheck = require('./utils/inputCheck');
+const tracker = require('./lib/tracker.js')
 //Express middleware
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-
+app.use('/api', apiRoutes);
 //Default response for any other request (Not found)
 app.use((req, res) => {
     res.status(404).end();

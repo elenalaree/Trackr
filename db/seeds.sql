@@ -4,16 +4,18 @@ VALUES
   ("Sales"),
   ("Programming");
 
-INSERT INTO job (title, salary, department_id)
+INSERT INTO role (title, salary, department_id)
 VALUES
-  ("Manager", 60,000, 1),
-  ("Engineer", 60,000, 3),
-  ("Sales floor", 60,000, 2),
-  ("Graphics", 60,000, 1),
-  ("UX designer", 60,000, 3),
-  ("Pitch writer", 60,000, 1);
+  ("Manager", 60000, 1),
+  ("Pitch writer", 60000, 1),
+  ("Graphics", 60000, 1),
+  ("Lead Sales", 60000, 2),
+  ("Sales floor", 60000, 2),
+  ("Lead Engineer", 60000, 3),
+  ("UX designer", 60000, 3)
+  ;
 
-  INSERT INTO employee (first_name, last_name, job_id ,manager_id)
+  INSERT INTO employee (first_name, last_name, role_id ,manager_id)
 VALUES
   ("Brian", "Reed", 2, 1),
   ("Janet", "Phillips", 2, 1),

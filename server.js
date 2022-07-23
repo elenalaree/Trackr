@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3002;
 const app = express();
 const apiRoutes = require('./routes/apiRoutes');
 const inputCheck = require('./utils/inputCheck');
-const tracker = require('./lib/tracker.js')
+const tracker = require('./lib/Tracker.js')
 //Express middleware
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
